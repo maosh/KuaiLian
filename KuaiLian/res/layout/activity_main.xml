@@ -1,0 +1,87 @@
+
+<!-- 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maosh.kuailian.MainActivity" >
+
+    <Button
+        android:id="@+id/getoVpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="refresh"
+        android:text="@string/get_ovpn" />
+
+
+    
+        <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp" >
+    </ListView>
+
+</LinearLayout>
+
+  start  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maosh.kuailian.MainActivity" >
+  
+    <ProgressBar android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_item"
+         />
+<!--  
+    <FrameLayout
+        android:id="@+id/layout_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+-->
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="wrap_content"
+            android:layout_height="381dp"
+            android:layout_marginTop="19dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|bottom"
+                android:gravity="center_horizontal"
+                android:text="@string/refresh"
+                android:textSize="20sp"
+                android:layout_weight=".50"
+                android:onClick="refreshT" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|bottom"
+                 android:gravity="center_horizontal"
+                android:text="@string/test"
+                android:textSize="20sp" 
+                android:layout_weight=".50"
+                android:onClick="testD"/>
+        </LinearLayout>
+  <!-- 
+        </FrameLayout>
+ -->
+</LinearLayout>
